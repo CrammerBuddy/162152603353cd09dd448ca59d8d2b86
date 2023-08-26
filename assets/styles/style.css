@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&family=Quicksand:wght@400;500;600&family=Raleway:wght@300;400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.content{
+    margin-top: 14vh;
+    color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Raleway';
+}
+.editor-picks{
+    height: auto;
+    width: 100%;
+}
+.card-large{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    padding-left: 3vw;
+}
+.card-small{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-left: 3vw;
+}
+.card-l {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 35vw;
+    height: 85vh;
+}
+.card-s {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 22.1vw;
+    height: 60vh;
+}
+.card-l, .card-s{
+    border-radius: 20px;
+    background: rgba(245, 245, 245, 0.8);
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+   
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+   
+.text-body {
+    color: rgb(134, 134, 134);
+}
+   
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+   
+/*Hover*/
+.card-l:hover, .card-s:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+   
+.card-l:hover .card-button, .card-s:hover .card-button {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.posts{
+    height: 50vh;
+    width: 113.2vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.recents{
+    width: auto;
+}
+.popular{
+    border-radius: 2rem;
+    padding: 5%;
+    width: 30vw;
+    text-align: center;
+    background: rgb(19, 27, 48);
+}
+.post{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 20vh;
+    width: 100%;
+    border-radius: 1rem;
+}
